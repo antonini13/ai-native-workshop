@@ -14,11 +14,13 @@ para começar.
 
 ## Contexto
 
-Leia `output/spec-02-build-plan.md`. Use apenas as stories da Onda 1.
+Leia `output/spec-01-user-stories.md` e `output/spec-02-build-plan.md`.
+Use apenas as stories da Onda 1 para o Linear.
 
 ## Processador
 
-Agente de IA + Ferramenta externa: Linear (via MCP `mcp__linear__save_issue`)
+Agente de IA + Ferramenta externa: Linear (via MCP `mcp__linear__save_project`
+e `mcp__linear__save_issue`)
 
 Fallback automático se Linear indisponível: escrever `output/linear-tasks.json`
 com o mesmo conteúdo estruturado.
@@ -28,15 +30,50 @@ com o mesmo conteúdo estruturado.
 1. **Verificar Linear** — Chame `mcp__linear__list_teams` para verificar
    disponibilidade e obter o team ID disponível.
 
-2. **Se Linear disponível:**
+2. **Gerar PRD** — Antes de qualquer exportação, escreva `output/spec-prd.md`
+   consolidando o documento de produto completo:
+
+   ```
+   ## PRD — [nome do produto]
+
+   ### Problema
+   [Declaração do problema validada no Research]
+
+   ### Usuário-alvo
+   [Persona principal com contexto]
+
+   ### Visão do produto
+   [Aposta em 1-2 frases do Shape]
+
+   ### Faz / Não faz (MVP)
+   **Faz:** ...
+   **Não faz:** ...
+
+   ### Métricas de sucesso
+   [KPIs definidos no Shape]
+
+   ### User Stories (Onda 1)
+   [Lista completa de stories com critérios de aceite]
+
+   ### User Stories (Onda 2+)
+   [Lista resumida — adiado]
+   ```
+
+3. **Se Linear disponível:**
+   - Crie o projeto com `mcp__linear__save_project`:
+     - `name`: nome do produto
+     - `description`: visão do produto (1-2 frases do PRD)
+     - `teamIds`: [team ID obtido no passo 1]
+   - Registre o ID do projeto criado.
    - Para cada story da Onda 1, crie uma issue com `mcp__linear__save_issue`:
      - `title`: título curto e acionável da story
      - `description`: texto completo da story + critérios de aceite formatados
        em markdown
+     - `projectId`: ID do projeto criado acima
      - Inclua o tamanho estimado (P/M/G) na descrição
    - Registre o ID e link de cada issue criada.
 
-3. **Se Linear indisponível (fallback):**
+4. **Se Linear indisponível (fallback):**
    - Escreva `output/linear-tasks.json` com os mesmos dados:
      ```json
      [
@@ -50,12 +87,12 @@ com o mesmo conteúdo estruturado.
      ```
    - Informe ao usuário que o fallback foi usado e onde está o arquivo.
 
-4. **Summary final** — Escreva `output/03-spec-summary.md` consolidando todo
+5. **Summary final** — Escreva `output/03-spec-summary.md` consolidando todo
    o processo: do problema ao plano, com links das issues criadas.
 
 ## Formato de output
 
-**Escreva:** `output/03-spec-summary.md`
+**Escreva:** `output/spec-prd.md` (passo 2) e `output/03-spec-summary.md` (passo 5)
 
 ```
 ## Spec Summary — [nome do produto]
@@ -82,8 +119,10 @@ Se fallback: `output/linear-tasks.json`
 
 ## Critérios de aceite
 
+- [ ] `output/spec-prd.md` foi escrito com problema, visão, faz/não faz, métricas e stories
+- [ ] Projeto criado no Linear com `save_project` antes de criar issues
 - [ ] Todas as stories da Onda 1 foram exportadas (Linear ou JSON)
-- [ ] Cada issue tem título, descrição com story completa e critérios de aceite
+- [ ] Cada issue tem título, descrição com story completa, critérios de aceite e `projectId`
 - [ ] `output/03-spec-summary.md` foi escrito e conecta o problema à solução
 - [ ] Links do Linear estão registrados (ou caminho do JSON de fallback)
 
