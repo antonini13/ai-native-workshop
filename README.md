@@ -132,14 +132,34 @@ para ela.
 
 ---
 
-## Criado por
+## Aviso importante
 
-Gabriel Antonini — consultoria em AI-Native para times e empresas de produto.
+Este repositório é **material educacional**. O workflow aqui demonstrado é uma
+versão simplificada criada para fins de aprendizado — não um sistema pronto para
+uso em produção.
 
-https://www.linkedin.com/in/gab-antonini/
+Implementar discovery com IA em ambientes reais de produto envolve muito mais:
+contratos epistemológicos robustos, validação de evidências, gestão de viés nos
+dados, integração com rituais existentes do time, calibração do modelo para o
+contexto específico da empresa, e governança do processo. Nada disso está presente
+aqui.
+
+**Use este material para entender o conceito e experimentar. Não para substituir
+um processo real de discovery.**
 
 ---
 
-*Este repositório é uma versão educacional simplificada, criada para o workshop
-AI-Native Product Discovery. Para o sistema completo de workflows, entre em
-contato.*
+## Consultoria
+
+Se você quer implementar workflows AI-Native no seu time de produto de verdade,
+entre em contato.
+
+**Gabriel Antonini**
+Consultoria em AI-Native para times e empresas de produto.
+
+[LinkedIn](https://www.linkedin.com/in/gab-antonini/) · g.antonini13@gmail.com
+
+---
+
+> Este repositório é somente leitura. Sinta-se livre para clonar e explorar,
+> mas contribuições externas não são aceitas.
