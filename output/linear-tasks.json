@@ -1,0 +1,26 @@
+[
+  {
+    "story_id": "US-01",
+    "title": "Preencher narrativa como destaque do relatório",
+    "description": "Como líder de time que precisa reportar progresso semanal, quero escrever o que aconteceu, o que ficou para trás e o que precisa de atenção antes de ver os dados automáticos, para que o relatório que meu gestor recebe represente o trabalho real do time — não apenas números sem contexto.\n\n**Critérios de aceite:**\n- [ ] O campo \"O que aconteceu esta semana\" aparece acima dos dados automáticos na tela de preenchimento e tem destaque visual claro sobre eles\n- [ ] O campo \"O que ficou para trás\" aparece como segundo campo de narrativa, marcado como obrigatório\n- [ ] O campo \"O que precisa de atenção da liderança\" aparece como terceiro campo, marcado como opcional\n- [ ] Cada campo de texto aceita no mínimo 1.000 caracteres\n- [ ] Os dados automáticos aparecem abaixo dos campos de narrativa, em seção visualmente separada e secundária\n\n**Tamanho:** M (3–5 dias)\n**Dependências:** nenhuma — é a base da Onda 1",
+    "estimate": "M"
+  },
+  {
+    "story_id": "US-03",
+    "title": "Salvar rascunho automaticamente sem perder conteúdo",
+    "description": "Como líder de time que preenche o relatório em partes ao longo da semana, quero que meu rascunho seja salvo automaticamente, para que eu não perca o que escrevi se precisar sair da tela antes de enviar.\n\n**Critérios de aceite:**\n- [ ] O conteúdo é salvo automaticamente a cada 30 segundos enquanto há alteração não salva\n- [ ] O status \"Rascunho\" aparece visível com timestamp da última gravação (\"Salvo há 2 minutos\")\n- [ ] Ao retornar à tela da mesma semana, o rascunho é restaurado automaticamente sem ação do usuário\n- [ ] O rascunho persiste até o envio ou até o fim da janela semanal configurada\n\n**Tamanho:** P (1–2 dias)\n**Dependências:** US-01 (precisa do formulário de narrativa pronto)",
+    "estimate": "P"
+  },
+  {
+    "story_id": "US-02",
+    "title": "Enviar relatório com narrativa + dados combinados",
+    "description": "Como líder de time, quero enviar um relatório que combine minha narrativa com os dados automáticos do projeto, para que meu gestor receba contexto completo sem que eu precise criar comunicação paralela fora do Kanvas.\n\n**Critérios de aceite:**\n- [ ] O botão \"Enviar relatório\" fica ativo apenas quando os dois campos obrigatórios (o que aconteceu e o que ficou para trás) estão preenchidos\n- [ ] Após o envio, o líder vê confirmação com nome e cargo do gestor que recebeu o relatório\n- [ ] O relatório enviado combina narrativa + dados na mesma estrutura que o líder visualizou durante o preenchimento\n- [ ] O líder não consegue enviar o mesmo relatório semanal duas vezes\n\n**Tamanho:** M (3–5 dias)\n**Dependências:** US-01 (precisa do formulário de narrativa pronto)",
+    "estimate": "M"
+  },
+  {
+    "story_id": "US-04",
+    "title": "Gestor recebe relatório com narrativa em destaque",
+    "description": "Como gestor que precisa de visibilidade dos times sem fazer reunião de status, quero receber um relatório onde a narrativa do time aparece em primeiro lugar, para que eu entenda o que aconteceu de verdade antes de interpretar os números.\n\n**Critérios de aceite:**\n- [ ] O email de notificação enviado ao gestor inclui a narrativa completa do time no corpo da mensagem (não apenas um link genérico)\n- [ ] No relatório acessado dentro do Kanvas, a seção de narrativa aparece acima dos dados automáticos, com o mesmo destaque visual que o líder viu ao preencher\n- [ ] O gestor acessa o relatório de qualquer time que ele supervisiona em até 2 cliques a partir da tela principal\n- [ ] O relatório indica claramente quem preencheu e quando foi enviado\n\n**Tamanho:** M (3–5 dias)\n**Dependências:** US-02 (precisa do fluxo de envio pronto)",
+    "estimate": "M"
+  }
+]

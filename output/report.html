@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Discovery Report — Kanvas Weekly</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .section-number { color: #BFDBFE; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+  <div class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full tracking-wide uppercase">Product Discovery Report</span>
+        <span class="text-gray-400 text-sm">26 de junho de 2026</span>
+      </div>
+      <h1 class="text-4xl font-bold text-gray-900 mb-2">Kanvas Weekly</h1>
+      <p class="text-gray-500 text-lg">Kanvas · Mid-market · Relatórios Automáticos</p>
+    </div>
+
+    <!-- Seção 1 — O Problema -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 mb-6">
+      <div class="section-number mb-2">01</div>
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">O Problema</h2>
+
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 mb-6">
+        <p class="text-gray-800 text-base leading-relaxed font-medium">
+          Líderes de time não conseguem comunicar o contexto real do seu trabalho semanal porque o Kanvas posiciona dados automáticos de projeto como conteúdo principal do relatório e narrativa do time como detalhe secundário — fazendo o relatório representar mal o trabalho, desincentivando o preenchimento, e quebrando o ciclo de visibilidade que o produto prometia.
+        </p>
+      </div>
+
+      <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Top 3 Evidências</h3>
+      <div class="space-y-4">
+        <div class="flex gap-4">
+          <span class="text-blue-600 font-bold text-lg mt-0.5">1</span>
+          <div>
+            <p class="text-gray-800 font-medium text-sm"><code class="bg-gray-100 px-1.5 py-0.5 rounded text-xs">report_exported_csv</code> cresceu +214,7% em 6 meses (340 → 1.070 eventos)</p>
+            <p class="text-gray-500 text-sm mt-1">Prova que o problema não é falta de motivação: usuários fazem o trabalho, só que fora do produto. Export CSV é preditor de churn — contas que cancelaram têm 4,2× mais eventos de export que as ativas.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-blue-600 font-bold text-lg mt-0.5">2</span>
+          <div>
+            <p class="text-gray-800 font-medium text-sm">NPS líderes de time: <strong>-8</strong> vs gestores: <strong>+34</strong> · Queda assimétrica: -31% líderes vs -5,7% gestores</p>
+            <p class="text-gray-500 text-sm mt-1">A insatisfação está cirurgicamente localizada no produtor do conteúdo. O gestor ainda tenta consumir, mas o líder já abandonou. Colapso pelo lado da oferta, não da demanda.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-blue-600 font-bold text-lg mt-0.5">3</span>
+          <div>
+            <p class="text-gray-800 font-medium text-sm">5 sistemas paralelos independentes criados por usuários: email manual, WhatsApp, Slack, Notion, planilha</p>
+            <p class="text-gray-500 text-sm mt-1">Convergência independente para a mesma estrutura — narrativa livre + dados como apoio — é o briefing implícito do que o Kanvas precisaria ser.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção 2 — O Insight -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 mb-6">
+      <div class="section-number mb-2">02</div>
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">O Insight</h2>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-lg p-5 mb-6">
+        <p class="text-blue-900 text-base leading-relaxed">
+          <strong>Os líderes de time não são preguiçosos nem relutantes.</strong> São motivados o suficiente para construir sistemas paralelos trabalhosos — WhatsApp, Slack, planilhas, emails semanais. A disposição de comunicar existe. O que falta é o formato certo dentro do produto.
+        </p>
+        <p class="text-blue-800 text-sm mt-3">
+          O design priorizou o gestor (consumidor), mas quem decide se o produto tem conteúdo é o líder de time (produtor). A simplificação do formulário e a campanha de reengajamento falharam porque não tocaram nessa assimetria estrutural.
+        </p>
+      </div>
+
+      <div class="border border-gray-200 rounded-lg p-5">
+        <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Pergunta de design</p>
+        <p class="text-gray-800 text-base italic">
+          "Como poderíamos permitir que o líder de time conte a história do que aconteceu antes dos dados automáticos chegarem ao gestor, sem aumentar a carga de trabalho de preenchimento?"
+        </p>
+      </div>
+    </div>
+
+    <!-- Seção 3 — A Visão de Produto -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 mb-6">
+      <div class="section-number mb-2">03</div>
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">A Visão de Produto</h2>
+
+      <div class="bg-gray-900 rounded-lg p-5 mb-6">
+        <p class="text-white text-base leading-relaxed">
+          Para líderes de time que precisam reportar progresso para gestores que não acompanham o trabalho diário, o <strong class="text-blue-400">Kanvas Weekly</strong> é uma atualização semanal estruturada que coloca a narrativa do time em primeiro lugar — com os dados automáticos do projeto como contexto, não como protagonistas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <div>
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">É</h3>
+          <ul class="space-y-2">
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-green-500 mt-0.5">✓</span> Espaço para narrativa do time antes dos dados chegarem</li>
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-green-500 mt-0.5">✓</span> Complemento à automação de dados existente</li>
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-green-500 mt-0.5">✓</span> Atualização semanal com estrutura fixa</li>
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-green-500 mt-0.5">✓</span> Parte do fluxo existente do Kanvas</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Não é</h3>
+          <ul class="space-y-2">
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-red-400 mt-0.5">✕</span> Avaliação de performance individual</li>
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-red-400 mt-0.5">✕</span> Substituto para boards ou sprints</li>
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-red-400 mt-0.5">✕</span> Mensageiro de equipe ou Slack interno</li>
+            <li class="flex gap-2 text-sm text-gray-700"><span class="text-red-400 mt-0.5">✕</span> Reescrita completa da feature atual</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Métricas de Sucesso</h3>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
+          <p class="text-2xl font-bold text-blue-600 mb-1">8k+</p>
+          <p class="text-xs text-gray-600 font-medium">report_configured/mês</p>
+          <p class="text-xs text-gray-400 mt-1">baseline Jan — 90 dias</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
+          <p class="text-2xl font-bold text-blue-600 mb-1">70%+</p>
+          <p class="text-xs text-gray-600 font-medium">envios no prazo</p>
+          <p class="text-xs text-gray-400 mt-1">de 52% atual — 60 dias</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
+          <p class="text-2xl font-bold text-blue-600 mb-1">&lt;4%</p>
+          <p class="text-xs text-gray-600 font-medium">churn mid-market</p>
+          <p class="text-xs text-gray-400 mt-1">de 6,8% atual — 1 quarter</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção 4 — A Interface -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 mb-6">
+      <div class="section-number mb-2">04</div>
+      <h2 class="text-xl font-semibold text-gray-900 mb-2">A Interface</h2>
+      <p class="text-gray-500 text-sm mb-6">Tela principal: Weekly Update — preenchimento pelo líder de time</p>
+
+      <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-700">
+        <!-- Mockup da interface -->
+        <div class="flex h-96">
+          <!-- Sidebar -->
+          <div class="w-48 bg-gray-900 border-r border-gray-700 flex flex-col p-4 flex-shrink-0">
+            <div class="text-white font-bold text-base mb-6">Kanvas</div>
+            <nav class="space-y-1 flex-1">
+              <div class="text-gray-500 text-xs px-2 py-1">Dashboard</div>
+              <div class="text-gray-500 text-xs px-2 py-1">Projetos</div>
+              <div class="bg-gray-800 text-white text-xs px-2 py-1.5 rounded flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>Relatórios</div>
+              <div class="text-gray-500 text-xs px-2 py-1">Time</div>
+              <div class="text-gray-500 text-xs px-2 py-1">Configurações</div>
+            </nav>
+            <div class="flex items-center gap-2 pt-4 border-t border-gray-700">
+              <div class="w-6 h-6 bg-blue-600 rounded-full flex-shrink-0"></div>
+              <div>
+                <div class="text-white text-xs font-medium">Rafael S.</div>
+                <div class="text-gray-500 text-xs">Tech Lead</div>
+              </div>
+            </div>
+          </div>
+          <!-- Main content -->
+          <div class="flex-1 bg-white p-5 overflow-y-auto">
+            <div class="flex items-start justify-between mb-4">
+              <div>
+                <div class="flex items-center gap-2 mb-0.5">
+                  <h3 class="text-gray-900 font-semibold text-sm">Atualização semanal</h3>
+                  <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 rounded-full font-medium">Rascunho</span>
+                </div>
+                <p class="text-gray-400 text-xs">Sprint 24 · 17 a 23 de junho de 2026</p>
+              </div>
+              <button class="bg-blue-600 text-white text-xs px-3 py-1.5 rounded font-medium">Enviar relatório</button>
+            </div>
+
+            <p class="text-gray-400 text-xs uppercase tracking-wider mb-2 font-medium">Narrativa da semana</p>
+
+            <div class="space-y-2 mb-4">
+              <div class="border border-blue-200 rounded-lg p-3 bg-blue-50">
+                <p class="text-xs font-medium text-gray-700 mb-1">O que aconteceu esta semana</p>
+                <p class="text-xs text-gray-600 leading-relaxed">Concluímos a integração com o gateway de pagamento Stripe após dois dias de debugging intenso. Identificamos e corrigimos um bug de concorrência crítico para o lançamento.</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg p-3">
+                <p class="text-xs font-medium text-gray-700 mb-1">O que ficou para trás</p>
+                <p class="text-xs text-gray-500 leading-relaxed">A tela de relatório financeiro foi adiada — dependíamos da API do time de dados que teve um incidente na quarta.</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg p-3">
+                <p class="text-xs font-medium text-gray-700 mb-1">O que precisa de atenção <span class="text-gray-400 font-normal">(opcional)</span></p>
+                <p class="text-xs text-gray-400 italic">Adicionar bloqueios ou riscos que precisam de decisão da liderança...</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 mb-2">
+              <div class="flex-1 h-px bg-gray-200"></div>
+              <p class="text-gray-400 text-xs uppercase tracking-wider whitespace-nowrap">dados automáticos do projeto</p>
+              <div class="flex-1 h-px bg-gray-200"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2">
+              <div class="bg-gray-50 border border-gray-100 rounded p-2 text-center">
+                <p class="text-gray-400 text-xs">Velocidade</p>
+                <p class="text-gray-900 font-bold text-sm">18 pts</p>
+                <p class="text-green-600 text-xs">+12%</p>
+              </div>
+              <div class="bg-gray-50 border border-gray-100 rounded p-2 text-center">
+                <p class="text-gray-400 text-xs">Tickets</p>
+                <p class="text-gray-900 font-bold text-sm">12/15</p>
+                <div class="w-full bg-gray-200 rounded-full h-1 mt-1"><div class="bg-blue-600 h-1 rounded-full" style="width:80%"></div></div>
+              </div>
+              <div class="bg-gray-50 border border-gray-100 rounded p-2 text-center">
+                <p class="text-gray-400 text-xs">Status</p>
+                <div class="flex items-center justify-center gap-1 mt-0.5"><span class="w-2 h-2 bg-green-500 rounded-full"></span><p class="text-gray-900 font-medium text-xs">No prazo</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-gray-400 text-xs mt-3 text-center">Mockup da tela de preenchimento. Prompt completo para geração em <code class="bg-gray-100 px-1 rounded">output/shape-03-sketch.md</code></p>
+    </div>
+
+    <!-- Seção 5 — O Plano -->
+    <div class="bg-white border border-gray-200 rounded-xl p-8 mb-6">
+      <div class="section-number mb-2">05</div>
+      <h2 class="text-xl font-semibold text-gray-900 mb-2">O Plano</h2>
+      <p class="text-gray-500 text-sm mb-6">Onda 1 — MVP · Estimativa: 10–17 dias úteis</p>
+
+      <div class="space-y-3 mb-8">
+
+        <div class="border-l-4 border-blue-600 bg-white border border-gray-200 rounded-r-lg p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-gray-400">US-01</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">M</span>
+              </div>
+              <p class="text-gray-900 font-medium text-sm">Preencher narrativa como destaque do relatório</p>
+              <p class="text-gray-500 text-xs mt-1">Core da solução — inverte a hierarquia narrativa/dados. Sem isso, nada muda.</p>
+            </div>
+            <span class="text-gray-300 text-xs whitespace-nowrap ml-4">3–5 dias</span>
+          </div>
+        </div>
+
+        <div class="border-l-4 border-blue-600 bg-white border border-gray-200 rounded-r-lg p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-gray-400">US-03</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded">P</span>
+              </div>
+              <p class="text-gray-900 font-medium text-sm">Salvar rascunho automaticamente</p>
+              <p class="text-gray-500 text-xs mt-1">Sem autosave, o medo de perder conteúdo recria a fricção que mata a adoção.</p>
+            </div>
+            <span class="text-gray-300 text-xs whitespace-nowrap ml-4">1–2 dias</span>
+          </div>
+        </div>
+
+        <div class="border-l-4 border-blue-600 bg-white border border-gray-200 rounded-r-lg p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-gray-400">US-02</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">M</span>
+              </div>
+              <p class="text-gray-900 font-medium text-sm">Enviar relatório com narrativa + dados combinados</p>
+              <p class="text-gray-500 text-xs mt-1">Sem envio, o formulário é um caderno particular. O ciclo só fecha quando o gestor recebe.</p>
+            </div>
+            <span class="text-gray-300 text-xs whitespace-nowrap ml-4">3–5 dias</span>
+          </div>
+        </div>
+
+        <div class="border-l-4 border-blue-600 bg-white border border-gray-200 rounded-r-lg p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-xs font-semibold text-gray-400">US-04</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-0.5 rounded">M</span>
+              </div>
+              <p class="text-gray-900 font-medium text-sm">Gestor recebe relatório com narrativa em destaque</p>
+              <p class="text-gray-500 text-xs mt-1">Valida que a mudança chegou ao consumidor — sem isso não dá pra medir a aposta.</p>
+            </div>
+            <span class="text-gray-300 text-xs whitespace-nowrap ml-4">3–5 dias</span>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Onda 2+ — Adiado</h3>
+      <ul class="space-y-1.5">
+        <li class="flex gap-2 text-sm text-gray-500"><span class="text-gray-300">→</span> US-05: Histórico de relatórios anteriores</li>
+        <li class="flex gap-2 text-sm text-gray-500"><span class="text-gray-300">→</span> Loop de feedback do gestor para o líder de time</li>
+        <li class="flex gap-2 text-sm text-gray-500"><span class="text-gray-300">→</span> Lembretes automáticos de preenchimento</li>
+        <li class="flex gap-2 text-sm text-gray-500"><span class="text-gray-300">→</span> Campos customizáveis por time</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-gray-400 text-sm pt-4 pb-8">
+      Gerado em 26 de junho de 2026 com AI-Native Workflow · do briefing ao Linear em uma sessão
+    </div>
+
+  </div>
+
+</body>
+</html>
