@@ -91,7 +91,7 @@ para ela.
 
 Gabriel Antonini — consultoria em AI-Native para times e empresas de produto.
 
-[linkedin.com/in/gabrielantonio] — substitua pelo link real antes de publicar.
+https://www.linkedin.com/in/gab-antonini/
 
 ---
 
