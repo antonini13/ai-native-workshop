@@ -26,8 +26,13 @@ explícita antes de continuar.
 ### Stage 0 — Onboarding
 
 **Faça:**
-1. Leia `case/onboarding-answers.md`
-2. Gere um summary estruturado do contexto
+1. Leia as perguntas em `stages/00-onboarding/questions.md`
+2. Faça cada pergunta UMA POR VEZ ao usuário — aguarde a resposta antes de continuar
+3. Seja conversacional: se a resposta pedir aprofundamento, faça uma pergunta de acompanhamento
+4. Após a última pergunta, gere o summary com base nas respostas recebidas
+
+Referência: `case/onboarding-answers.md` contém respostas de exemplo do case Kanvas —
+use apenas se o usuário pedir para usar o case pré-carregado.
 
 **Escreva:** `output/00-onboarding-summary.md`
 
@@ -84,8 +89,9 @@ A task 02 tem gate humano — apresente o plano e aguarde aprovação antes
 de exportar.
 
 3. Siga `stages/03-spec/tasks/03-exportar-linear.md`
+4. Siga `stages/03-spec/tasks/04-gerar-report-html.md`
 
-**Output final:** `output/03-spec-summary.md` + tasks no Linear
+**Output final:** `output/03-spec-summary.md` + tasks no Linear + `output/report.html`
 
 ---
 

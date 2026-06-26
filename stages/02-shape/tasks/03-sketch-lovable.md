@@ -45,9 +45,14 @@ manual em qualquer ferramenta de geração de UI.
    - Contexto do produto: quem usa, para quê, qual problema resolve
    - Tela principal: nome, propósito, o que o usuário faz nela
    - Componentes esperados com descrição de cada um
-   - Estilo: clean, profissional, B2B, shadcn/ui
+   - Direção visual obrigatória: "Use Tailwind CSS e shadcn/ui. Estilo
+     inspirado no design do Linear — fundo branco (#FFFFFF), tipografia Inter,
+     sidebar esquerda em cinza-escuro (#111827), cards com borda fina (#E5E7EB),
+     sem sombras pesadas, sem gradientes, sem ilustrações decorativas. Cor de
+     ação principal: azul (#2563EB). Density: confortável — não compactar
+     demais. Parecer um produto B2B real, não um template genérico."
    - Instrução explícita: "não use dados reais de usuários, use dados fictícios
-     de exemplo"
+     de exemplo plausíveis"
 
 4. **Se Lovable disponível** — Após criar o projeto, registre a preview URL
    e a editor URL. Descreva brevemente o que foi construído.
