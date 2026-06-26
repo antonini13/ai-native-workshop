@@ -15,6 +15,23 @@ Antes de qualquer coisa, leia `case/briefing.md` para entender o case.
 - `data/competitive/competitor-analysis.md` — análise de concorrentes
 - `case/onboarding-answers.md` — contexto da empresa que trouxe o caso
 
+## Como iniciar
+
+Quando o usuário digitar `/workflow`, `rodar o workflow`, `iniciar` ou qualquer
+variação, responda exatamente assim antes de começar:
+
+```
+╔══════════════════════════════════════════════════╗
+║        AI-Native Workshop · Product Discovery    ║
+║   Onboarding → Research → Shape → Spec → Linear  ║
+╚══════════════════════════════════════════════════╝
+
+Iniciando Stage 0 — Onboarding.
+```
+
+Depois leia `case/briefing.md` e inicie o onboarding imediatamente com a
+primeira pergunta. Não explique o que vai fazer — apenas comece.
+
 ## Como rodar
 
 Execute os stages em ordem. Cada stage produz um summary que alimenta o
