@@ -21,27 +21,72 @@ ler qualquer arquivo em `stages/` e entender exatamente o que o agente vai fazer
 
 ---
 
-## Como usar
+## Como rodar (passo a passo)
 
-**Pré-requisitos:** Claude Code instalado (`npm install -g @anthropic-ai/claude-code`)
+### 1. Instalar o Claude Code
 
 ```bash
-git clone https://github.com/[seu-usuario]/ai-native-workshop
-cd ai-native-workshop
+npm install -g @anthropic-ai/claude-code
+```
+
+Precisa ter Node.js instalado. Para verificar: `node --version`
+
+### 2. Autenticar
+
+```bash
 claude
 ```
 
-Quando o Claude Code abrir, diga: `rodar o workflow` ou `começar o discovery`.
+Na primeira vez, abre o browser para autenticar com sua conta Anthropic.
+Após autenticar, feche o Claude Code (`/exit`) e siga para o próximo passo.
 
-O agente vai conduzir o processo. Você interage nos gates de aprovação — momentos
-em que o agente apresenta o resultado de um stage e aguarda sua confirmação antes
-de continuar.
+### 3. Clonar o repositório
 
-**Integrações opcionais:**
-- Lovable MCP: para gerar o sketch de interface no Shape
-- Linear MCP: para criar as tasks no Spec
+```bash
+git clone https://github.com/antonini13/ai-native-workshop.git
+cd ai-native-workshop
+```
 
-Se não estiverem configurados, o agente usa fallbacks automáticos.
+### 4. Abrir o Claude Code na pasta do workshop
+
+```bash
+claude
+```
+
+### 5. Iniciar o workflow
+
+Dentro do Claude Code, digite:
+
+```
+/workflow
+```
+
+O agente vai exibir um banner de início e fazer a primeira pergunta do onboarding.
+
+---
+
+### Durante o onboarding
+
+O agente faz **6 perguntas uma por vez**. Você responde como se fosse o Head of
+Product da Kanvas. As respostas estão prontas para copiar e colar em
+`case/onboarding-cheatsheet.md` — abra esse arquivo ao lado antes de começar.
+
+### Gates de aprovação
+
+Em 3 momentos o agente para e aguarda sua confirmação antes de continuar:
+- Após o **Research** — "Esse diagnóstico faz sentido?"
+- Após a **Visão de produto** — "Isso captura o que queremos construir?"
+- Após o **Plano de build** — "A Onda 1 faz sentido como MVP?"
+
+Responda com "sim" ou "pode continuar" para avançar.
+
+---
+
+**Integrações usadas no demo:**
+- Lovable MCP — gera o sketch de interface no Shape
+- Linear MCP — cria o projeto e as tasks no Spec
+
+Se não estiverem configurados, o agente usa fallbacks automáticos (prompt de texto e JSON local).
 
 ---
 
