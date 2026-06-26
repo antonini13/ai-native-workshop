@@ -65,12 +65,18 @@ com o mesmo conteúdo estruturado.
      - `description`: visão do produto (1-2 frases do PRD)
      - `teamIds`: [team ID obtido no passo 1]
    - Registre o ID do projeto criado.
+   - Crie o PRD como documento do projeto com `mcp__linear__save_document`:
+     - `title`: "PRD — [nome do produto]"
+     - `content`: conteúdo completo do `output/spec-prd.md` em markdown
+     - `project`: ID do projeto criado acima
    - Para cada story da Onda 1, crie uma issue com `mcp__linear__save_issue`:
      - `title`: título curto e acionável da story
      - `description`: texto completo da story + critérios de aceite formatados
        em markdown
-     - `projectId`: ID do projeto criado acima
+     - `project`: ID do projeto criado acima
      - Inclua o tamanho estimado (P/M/G) na descrição
+     - Se houver URL do sketch (Lovable ou outro), inclua em `links`:
+       `[{"url": "[url-do-sketch]", "title": "Sketch — [nome do produto]"}]`
    - Registre o ID e link de cada issue criada.
 
 4. **Se Linear indisponível (fallback):**
@@ -121,8 +127,10 @@ Se fallback: `output/linear-tasks.json`
 
 - [ ] `output/spec-prd.md` foi escrito com problema, visão, faz/não faz, métricas e stories
 - [ ] Projeto criado no Linear com `save_project` antes de criar issues
+- [ ] PRD criado como documento do projeto com `save_document`
 - [ ] Todas as stories da Onda 1 foram exportadas (Linear ou JSON)
-- [ ] Cada issue tem título, descrição com story completa, critérios de aceite e `projectId`
+- [ ] Cada issue tem título, descrição com story completa, critérios de aceite e `project`
+- [ ] Link do sketch adicionado em cada issue via `links`
 - [ ] `output/03-spec-summary.md` foi escrito e conecta o problema à solução
 - [ ] Links do Linear estão registrados (ou caminho do JSON de fallback)
 
