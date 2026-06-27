@@ -82,11 +82,9 @@ Responda com "sim" ou "pode continuar" para avançar.
 
 ---
 
-**Integrações usadas no demo:**
-- Lovable MCP — gera o sketch de interface no Shape
-- Linear MCP — cria o projeto e as tasks no Spec
-
-Se não estiverem configurados, o agente usa fallbacks automáticos (prompt de texto e JSON local).
+**O que o agente gera:**
+- Prompt de interface para colar em Lovable, v0 ou qualquer ferramenta de UI
+- `output/tasks.json` com as tasks do MVP para importar na ferramenta de gestão do seu time
 
 ---
 

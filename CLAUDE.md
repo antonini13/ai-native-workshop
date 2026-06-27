@@ -87,7 +87,7 @@ Execute em ordem:
 
 A task 02 tem gate humano — apresente a visão e aguarde aprovação.
 
-3. Siga `stages/02-shape/tasks/03-sketch-lovable.md`
+3. Siga `stages/02-shape/tasks/03-sketch.md`
 
 A task 03 tem gate humano — apresente o sketch ou o prompt de fallback e
 aguarde aprovação antes de ir para o Spec.
@@ -105,10 +105,10 @@ Execute em ordem:
 A task 02 tem gate humano — apresente o plano e aguarde aprovação antes
 de exportar.
 
-3. Siga `stages/03-spec/tasks/03-exportar-linear.md`
+3. Siga `stages/03-spec/tasks/03-exportar-tasks.md`
 4. Siga `stages/03-spec/tasks/04-gerar-report-html.md`
 
-**Output final:** `output/03-spec-summary.md` + tasks no Linear + `output/report.html`
+**Output final:** `output/03-spec-summary.md` + `output/tasks.json` + `output/report.html`
 
 ---
 
