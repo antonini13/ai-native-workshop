@@ -10,16 +10,16 @@ Para líderes de time que precisam reportar progresso para gestores que não aco
 
 ## Tasks criadas — Onda 1
 
-| Story | Título | Tamanho | Depende de |
-|-------|--------|---------|------------|
-| US-01 | Preencher narrativa como destaque do relatório | M (3–5 dias) | — |
-| US-03 | Salvar rascunho automaticamente | P (1–2 dias) | US-01 |
-| US-02 | Enviar relatório com narrativa + dados | M (3–5 dias) | US-01 |
-| US-04 | Gestor recebe relatório com narrativa em destaque | M (3–5 dias) | US-02 |
+| Story | Título | Tamanho | Depende de | Linear |
+|-------|--------|---------|------------|--------|
+| US-01 | Preencher narrativa como destaque do relatório | M (3–5 dias) | — | [ANT-217](https://linear.app/antonini-portfolio/issue/ANT-217/preencher-narrativa-como-destaque-do-relatorio) |
+| US-03 | Salvar rascunho automaticamente | P (1–2 dias) | US-01 | [ANT-218](https://linear.app/antonini-portfolio/issue/ANT-218/salvar-rascunho-automaticamente-sem-perder-conteudo) |
+| US-02 | Enviar relatório com narrativa + dados | M (3–5 dias) | US-01 | [ANT-219](https://linear.app/antonini-portfolio/issue/ANT-219/enviar-relatorio-com-narrativa-dados-combinados) |
+| US-04 | Gestor recebe relatório com narrativa em destaque | M (3–5 dias) | US-02 | [ANT-220](https://linear.app/antonini-portfolio/issue/ANT-220/gestor-recebe-relatorio-com-narrativa-em-destaque) |
 
 **Estimativa total:** 10–17 dias úteis (~2–3 semanas, 1 dev full-stack)
 
-*Tasks exportadas em `output/linear-tasks.json` — importar no Linear quando a autenticação estiver ativa.*
+*Tasks exportadas e criadas no Linear (projeto [Kanvas Weekly](https://linear.app/antonini-portfolio/project/kanvas-weekly-a7458f2eb176)) com dependências configuradas.*
 
 ## Onda 2+ (adiado)
 
@@ -30,7 +30,7 @@ Para líderes de time que precisam reportar progresso para gestores que não aco
 
 ## Próximos passos
 
-1. Importar `output/linear-tasks.json` no Linear (via Forge com autenticação ativa)
+1. ~~Importar `output/linear-tasks.json` no Linear~~ ✓ issues ANT-217 a ANT-220 criadas com dependências
 2. Gerar sketch no Lovable usando o prompt em `output/shape-03-sketch.md`
 3. Planning da Onda 1: checar schema de `report_configured` antes de estimar US-01 (pode ser G se estrutura for rígida)
 4. Checar como o email de relatório atual é gerado antes de estimar US-04 (pode ser G se for template hardcoded)

@@ -55,10 +55,10 @@ claude
 
 ### 5. Iniciar o workflow
 
-Dentro do Claude Code, digite:
+Dentro do Claude Code, escreva a mensagem:
 
 ```
-/workflow
+iniciar
 ```
 
 O agente vai exibir um banner de início e fazer a primeira pergunta do onboarding.
@@ -132,6 +132,14 @@ para ela.
 
 ---
 
+## Licença
+
+[![CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Este material está licenciado sob [Creative Commons Attribution-NonCommercial 4.0](LICENSE.md). Você pode compartilhar e adaptar livremente para fins não comerciais, desde que cite **Gabriel Antonini** como autor.
+
+---
+
 ## Aviso importante
 
 Este repositório é **material educacional**. O workflow aqui demonstrado é uma
@@ -157,7 +165,7 @@ entre em contato.
 **Gabriel Antonini**
 Consultoria em AI-Native para times e empresas de produto.
 
-[LinkedIn](https://www.linkedin.com/in/gab-antonini/) · g.antonini13@gmail.com
+[LinkedIn](https://www.linkedin.com/in/gab-antonini/)
 
 ---
 
