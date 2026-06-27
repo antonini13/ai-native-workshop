@@ -1,7 +1,7 @@
 # AI-Native Workshop — Product Discovery com IA
 
 Demo de um fluxo completo de product discovery conduzido por IA: o agente passa
-por quatro stages, do briefing inicial até tasks criadas no Linear.
+por quatro stages, do briefing inicial até tasks prontas para build.
 
 O case é fictício, mas os problemas são reais.
 
@@ -12,7 +12,7 @@ O case é fictício, mas os problemas são reais.
 Um fluxo de product discovery onde um agente de IA conduz o processo passo a passo:
 
 ```
-Onboarding → Research → Shape → Spec → Linear
+Onboarding → Research → Shape → Spec
 ```
 
 Cada stage tem contratos de tarefa explícitos — arquivos que descrevem o objetivo,
