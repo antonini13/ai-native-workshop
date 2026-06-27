@@ -23,13 +23,34 @@ ler qualquer arquivo em `stages/` e entender exatamente o que o agente vai fazer
 
 ## Como rodar (passo a passo)
 
+### 0. Pré-requisitos
+
+Antes de começar, verifique se tem o seguinte instalado:
+
+**Git**
+```bash
+git --version
+```
+Se não tiver: [git-scm.com/downloads](https://git-scm.com/downloads)
+
+**Node.js 18+**
+```bash
+node --version
+```
+Se não tiver: [nodejs.org](https://nodejs.org) (baixe a versão LTS)
+
+**Conta Anthropic**
+Necessária para autenticar o Claude Code. Crie em [claude.ai](https://claude.ai) se ainda não tiver.
+
+Não é necessária conta no GitHub — repositórios públicos podem ser clonados sem autenticação.
+
+---
+
 ### 1. Instalar o Claude Code
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
-
-Precisa ter Node.js instalado. Para verificar: `node --version`
 
 ### 2. Autenticar
 
